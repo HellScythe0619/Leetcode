@@ -62,8 +62,6 @@ class Solution {
      */
     private TreeNode helper(int[] inorder, int inStart, int inEnd, int[] preorder, int preStart, int preEnd,
             HashMap<Integer, Integer> inorderMap) {
-
-
         // System.out.println("inStart: " + inStart + ", inEnd: " + inEnd + ", inStart > inEnd:" + (inStart > inEnd)
         //         + ", preStart: " + preStart + ", preEnd: " + preEnd + ", preStart > preEnd:" + (preStart > preEnd));
         
@@ -118,6 +116,7 @@ class Solution {
          * node: 7, node.left: null, node.right: null
          * node: 20, node.left: 15, node.right: 7
          * node: 3, node.left: 9, node.right: 20
+         * [3,9,20,null,null,15,7]
          */
 
         return node;
