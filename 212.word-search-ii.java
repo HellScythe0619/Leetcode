@@ -55,19 +55,19 @@ class Solution {
         
         board[i][j] = '#';  // 將當前字元標記'#'，防止重複loop走過
         if (i > 0) {
-            // 左
+            // 上
             dfs(board, i - 1, j, trieNode, resultSet);
         }
         if (i < board.length - 1) {
-            // 右
+            // 下
             dfs(board, i + 1, j, trieNode, resultSet);
         }
         if (j > 0) {
-            // 下
+            // 左
             dfs(board, i, j - 1, trieNode, resultSet);
         }
         if (j < board[0].length - 1) {
-            // 上
+            // 又
             dfs(board, i, j + 1, trieNode, resultSet);
         }
         board[i][j] = c;    // 還原字元
